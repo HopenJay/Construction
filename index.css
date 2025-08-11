@@ -120,10 +120,6 @@ h2{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     background-color: rgba(0, 0, 0, 0.5);
     padding: 1em;
-    background-image: url('images/const_site.jpg');
-    background-blend-mode: overlay;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .name{
