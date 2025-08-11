@@ -1,0 +1,213 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color:  rgb(119, 152, 163);
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(119, 152, 163);
+}
+
+nav{
+    /* border: 1px solid#000;  */
+    width: 100%;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    /* padding: 0em 1em; */
+    height: 40px;
+    display: flex;
+    place-content: center;
+    position: fixed;
+}
+
+nav div {
+    /* border: 1px solid #000; */
+    display: flex;
+    width: 50%;
+    height: 40px;
+    justify-content: center;
+    position: fixed;
+    align-items: center;
+    gap: 5em;
+}
+
+nav div a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+header{
+    /* border: 1px solid#000; */
+    text-align: center;
+    /* width: 90%; */
+    height: 500px;
+    width: 100%;
+    background-image: url('images/const_site.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-bottom: 0em;
+}
+
+h1{
+    text-shadow: 0px 10px 5px  rgb(119, 152, 163);
+    color: rgb(119, 152, 163);
+    margin-bottom: 0em;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+
+.first_section{
+    /* background-color:  rgba(119, 152, 163); */
+    margin-top: 0em;
+    padding: 1em;
+}
+
+.first_section p{
+    margin-top: 0em;
+    background-color: rgba(0, 0, 0, 0.5);
+    color:  rgb(119, 152, 163);
+    border-radius: 15px;
+    padding: 0.5em;
+    width: 100;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 0em;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    color:  rgb(119, 152, 163);
+}
+
+.testimonial, .workers-list{
+    /* border: 1px solid #000; */
+    display: grid;
+    place-content: center;
+    gap: 1em;
+    grid-template-areas: 1fr 1fr 1fr;
+}
+
+.testimonial div img, .workers-list div img{
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 100px;
+}
+
+.client1,.client2, .client3, .worker1, .worker2, .worker3, .worker4, .worker5{
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    width: 60vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.name{
+    font-weight: bold;
+}
+/* section,footer{
+} */
+
+/* Mobile view */
+@media (max-width: 800px) {
+    /* body{
+        background-color: pink;
+    } */
+     .hamburger{
+        display: flex;
+        flex-direction: column;
+        gap: 0.2em;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.5);
+        transition: background-color 1s;
+     }
+
+     .hamburger div{
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        width: 30px;
+        height: 5px;
+        background-color:  rgb(119, 152, 163);
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
+     }
+
+     .hamburger.active{
+        background-color: transparent;
+        /* border: none; */
+     }
+
+     nav div{
+        position: absolute;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        top: 0;
+        left: 0;
+        transform: translate(-100%, 0%);
+        height: 500px;
+        width: 70px;
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
+        transition: transform 1s;
+     }
+
+     nav div.active{
+        top: 0;
+        left: 0;
+        transform: translate(0%, 0%);
+        height: 500px;
+    }
+
+    nav div a{
+        color:  rgb(119, 152, 163);
+    }
+
+    .mid_hamburger.active{
+        display: none;
+    }
+
+    .first_hamburger{
+        transition: transform 1s;
+    }
+
+    .last_hamburger{
+        transition: transform 1s;
+    }
+
+    .first_hamburger.active{
+        transform: rotate(45deg) translate(30%, 50%);
+    }
+
+    .last_hamburger.active{
+        transform: rotate(130deg) translate(0%, 0%);
+    }
+}
+
+
+@media (min-width: 800.01px) {
+    nav{
+        top: 1px;
+    }
+    nav div {
+        /* border: 1px solid #000; */
+        background: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(90px);
+        -webkit-backdrop-filter: blur(90px);
+        border-radius: 25px;
+    }
+
+    nav div a{
+        color:  rgb(119, 152, 163);
+    }
+}
