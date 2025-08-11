@@ -120,6 +120,10 @@ h2{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     background-color: rgba(0, 0, 0, 0.5);
     padding: 1em;
+    background-image: url('images/const_site.jpg');
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .name{
@@ -137,13 +141,13 @@ h2{
         display: flex;
         flex-direction: column;
         gap: 0.2em;
-        position: fixed;
-        background-color: rgba(0, 0, 0, 0.5);
-        transition: background-color 1s;
+        position: absolute;
+        /* background-color: rgba(0, 0, 0, 0.5); */
+        /* transition: background-color 1s; */
      }
 
      .hamburger div{
-        border: 1px solid rgba(0, 0, 0, 0.2);
+        /* border: 1px solid rgba(0, 0, 0, 0.2); */
         width: 30px;
         height: 5px;
         background-color:  rgb(119, 152, 163);
@@ -154,6 +158,10 @@ h2{
      .hamburger.active{
         background-color: transparent;
         /* border: none; */
+     }
+
+     nav{
+        position: absolute;
      }
 
      nav div{

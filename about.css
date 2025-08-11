@@ -43,6 +43,14 @@ section div{
     /* border: 1px solid #000; */
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
+    background-image: url('images/abt_header.jpg');
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nobg{
+    background-image: none;
 }
 
 section > div p{
