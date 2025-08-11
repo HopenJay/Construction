@@ -96,10 +96,11 @@ h2{
     border: 1px solid rgba(0, 0, 0, 0.5);
     border-radius: 50%;
     width: 100px;
+    height: 100px;
 }
 
 .client1,.client2, .client3, .worker1, .worker2, .worker3, .worker4, .worker5{
-    border: 1px solid rgba(0, 0, 0, 0.5);
+    /* border: 1px solid rgba(0, 0, 0, 0.5); */
     width: 60vw;
     height: fit-content;
     display: flex;
@@ -110,6 +111,7 @@ h2{
     border-radius: 25px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     background-color: rgba(0, 0, 0, 0.5);
+    padding: 1em;
 }
 
 .name{
